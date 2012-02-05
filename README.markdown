@@ -4,6 +4,6 @@ This is my repo for the material about my presentations on some events.
 
 Here you'll find presentations about:
 
-* Add-ons developmentfor Mozilla Firefox
+* Add-ons SDK development for Mozilla Firefox
 
 Tks and enjoy :)
