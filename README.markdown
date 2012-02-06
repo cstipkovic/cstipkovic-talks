@@ -1,4 +1,4 @@
-# Material about Mozilla Presentations made by Clauber Stipkovic
+# Material about my Mozilla Presentations
 
 This is my repo for the material about my presentations on some events.
 
