@@ -1,8 +1,8 @@
-Firefox OS App Hacking Days - São Paulo Technical School
-========================
+Add-ons Firefox - Mozilla Tech Day - BandTec
+============================================
 
 **Where this presentation was given:**
 
 - 2013
     - June
-        * (13/14) Firefox OS App Hacking Days
+        * (15) Mozilla Tech Day
