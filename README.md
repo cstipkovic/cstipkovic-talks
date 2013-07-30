@@ -1,9 +1,8 @@
-# Material about my Mozilla Presentations
+Add-ons Firefox - Mozilla Tech Day - BandTec
+============================================
 
-This is my repo for the material about my presentations on some events.
+**Where this presentation was given:**
 
-Here you'll find presentations about:
-
-* Add-ons SDK development for Mozilla Firefox
-
-Tks and enjoy :)
+- 2013
+    - June
+        * (15) Mozilla Tech Day
