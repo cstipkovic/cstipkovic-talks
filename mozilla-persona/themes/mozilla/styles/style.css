@@ -323,7 +323,7 @@ blockquote .quotesource {
 	width:100%;
 	text-align:center;
 	line-height:1;
-	font-size:150px;
+	font-size:100px;
 	-webkit-transform:translateY(-50%);
 	-moz-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
