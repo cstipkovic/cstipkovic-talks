@@ -1,230 +1,310 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <title>Add-ons para Firefox</title>
-        <meta charset="utf-8">
-        <script src="js/slides.txt"></script>
-  <style>
-    /* Your individual styles here, or just use inline styles if that’s
-       what you want. */
+<!DOCTYPE HTML>
+<html lang="en-US" class="fade">
+<!--
+  ^ You can control a few things with the <html> element's classes:
 
+  "fade"      - smooth fade between slides
+  "nonumbers" - remove the slide numbering after the progress bar
+-->
+
+<head>
+  <title>Mozilla Persona</title>
+  <!--
+    ^ Don't forget a good title - they show up as bookmarks and in Google
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1274, user-scalable=no">
+  <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+  <style type="text/css">
+    /* Add your own styles here */
   </style>
-  <meta content="width=1100,height=750" name="viewport">
-  <meta content="yes" name="apple-mobile-web-app-capable"></head>
+</head>
+<body class="list">
 
-  <body class="loaded" style="display: none">
-    <section class="slides layout-regular template-default">
+  <header class="caption">
+    <h1>Mozilla Persona</h1>
+    <p class="footer">Clauber Stipkovic - <a href="http://twitter.com/">@clauberhalic</a></p>
+  </header>
 
-      <!-- Your slides (<article>s) go here. Delete or comment out the
-           slides below. -->
+<!--
+  The following is a slide, it needs a class of "slide" and it doesn't
+  hurt to keep the right semantic elements in there, too.
+  IMPORTANT: each slide needs its own unique ID - this will become its
+  URL and this is how this slide system works!
+-->
 
-      <article class="biglogo current">
-      </article>
-
-      <article class="next">
-        <h1>
-            Add-ons para Firefox
-        </h1>
-        <h2>Clauber Stipkovic</h2>
-      </article>
-
-      <article>
-        <q>
-          Lindo, filho maravilhoso. Um amor!!!
-        </q>
-        <div class="author">
-            Mamãe
-        </div>
-      </article>
-
-      <article class="fill">
-        <h3>
-          #facepalm
-        </h3>
-        <p>
-          <img src="img/tumblr_m0f3b7mqFY1qh2o7zo1_500.gif">
-        </p>
-      </article>
-
-      <article class="">
-        <h3>
-          Clauber Stipkovic
-        </h3>
-        <ul>
-          <li>
-            Front-End Developer - UOL HOSTS
-          </li>
-          <li>
-            Voluntário Mozilla (desde 2005) e Mozilla Reps<br>
-            <small>Tradução, Mozilla Ubiquity, Addons SDK, Firefox OS (Gaia) ...</small>
-          </li>
-          <li>
-            Estudante de Ciência da Computação na Universidade Mackenzie - FCI
-          </li>
-        </ul>
-      </article>
-
-      <article class="fill">
-        <p>
-          <img src="img/4iyshp.jpg">
-        </p>
-      </article>
-
-      <article>
-        <h1>Antes de começar, um pouco de história!</h1>
-      </article>
-
-      <article>
-        <h1>Como as Extensões eram feitas antes?</h1>
-      </article>
-
-      <article>
-        <h3>Zuul ou XUL?</h3>
-        <br><br>
-        <img src="img/there-is-no-dana-only-zuul_design.png" width="400" class="centered">
-      </article>
-
-      <article>
-        <h3>XUL - XML User Interface Language</h3>
-        <h4>Mozilla's XML-based language</h4>
-        <br>
-        <img src="img/xul.jpg" width="300" class="centered">
-        <br>
-        <a href="https://developer.mozilla.org/en/docs/XUL">https://developer.mozilla.org/en/docs/XUL</a>
-      </article>
-
-      <article>
-        <h3>Alguns problemas ao utilizar XUL!</h3>
-        <ul>
-          <li>Hierarquia e quantidade de arquivos muito grande para construir uma extensão</li>
-          <li>Necessidade de reiniciar o navegador ápos instalar a extensão</li>
-          <li>Acesso direto ao Core do Firefox podendo causar problemas de segurança</li>
-        </ul>
-      </article>
-
-      <article>
-        <h1>Mozilla Ubiquity</h1>
-        <h3>Onde as idéias começaram a surgir!</h3>
-        <p>
-          <img class="centered" src="img/ubiquity_logo.jpg">
-        </p>
-      </article>
-
-      <article>
-        <h2>Mozilla Jetpack - o Add-on Protótipo</h2>
-        <p>
-          <img class="centered" src="img/mozilla-jetpack.png">
-        </p>
-      </article>
-
-      <article>
-        <h3>Vantagens para os Web Developers</h3>
-        <ul>
-          <li>Web-Based: Atrativo para o desenvolvedor</li>
-          <li>Mais seguro</li>
-          <li>Robusto - API</li>
-          <li>Sem necessidade de restart do navegador / Atualização "Silenciosa"</li>
-          <li>Padrões abertos e utilização de Javascript (seguindo as recomendações do CommonJS)</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>Mozilla Add-ons SDK</h3>
-        <p>
-          <img class="centered" src="img/ADDONS_mascot_300dpi.png">
-        </p>
-      </article>
-
-      <article>
-        <h3>E o que o Add-on SDK trouxe para os desenvolvedores?</h3>
-        <ul>
-          <li>Um SDK mais robusto, e não apenas um Add-on para fazer Add-ons</li>
-          <li>Utilização de linguagens e tecnologias como Python, Virtualenv, Javascript</li>
-          <li>Possibilidade de utilizar o SDK em linha de comando</li>
-          <li>Gerador de XPI, execução de testes, tudo isso em linha de comando</li>
-        </ul>
-      </article>
-
-      <article>
-        <h1>Ok, mas linha de comando é um pouco dificil pra mim!</h1>
-      </article>
-
-      <article>
-        <h2>Sem problemas :)</h2>
-      </article>
-
-      <article>
-        <h3>Mozilla Add-on Build</h3>
-        <br><br>
-        <p>
-          <img class="centered" src="img/addon2.png">
-        </p>
-        <br><br>
-        <a href="https://builder.addons.mozilla.org/">https://builder.addons.mozilla.org/</a>
-      </article>
-
-      <article>
-        <h3>Mozilla Add-on Build</h3>
-        <ul>
-          <li>Criação de Add-ons direto pelo browser</li>
-          <li>Produtivo editor de texto online</li>
-          <li>Teste instantaneo do seu Add-on</li>
-          <li>Possibilidade de utilização de controle de versão integrado & compartilhamento</li>
-        </ul>
-      </article>
-
-      <article class="">
-        <h3>
-          MDN - Mozilla Developer Network
-        </h3>
-        <br>
-        <img class="centered" height="440" src="img/mdn-webdev.png" alt="">
-        <p><a href="https://developer.mozilla.org/">https://developer.mozilla.org/</a></p>
-      </article>
-
-      <article class="smaller">
-        <h3>
-          Links que podem "te ajudar a conseguir ajuda" :)
-        </h3>
-        <ul>
-          <li>
-            <a href="https://lists.mozilla.org/listinfo/dev-extensions-br">https://lists.mozilla.org/listinfo/dev-extensions-br</a>
-          </li><li>
-            <a href="irc://irc.mozilla.org/">irc://irc.mozilla.org/</a><br>
-            #addons, #jetpack, #mozilla-br
-          </li>
-          <li>
-            <a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/">https://addons.mozilla.org/en-US/developers/docs/sdk/latest/</a>
-        </li></ul>
-      </article>
-
-      <article>
-        <h3>
-          Obrigado
-        </h3>
-        <ul>
-          <li>
-            <a href="http://clauber.coffeebreakers.org">clauber.coffeebreakers.org</a><br>
-            twitter: @clauberhalic
-        </li></ul>
-        <p><a href="http://tinyurl.com/mozilla-tech-day-bandtec-2013
-">http://tinyurl.com/mozilla-tech-day-bandtec-2013</a></p>
-        <br>
-        <img class="centered" height="300" src="img/276250_Papel-de-Parede-Meme-Thumbs-Up_1920x1200_1667779.jpg" alt="">
-      </article>
-
-      <article class="">
-        <h1>
-          Agora, um pouco de demonstração \o/
-        </h1>
-      </article>
-
-      <div id="prev-slide-area" class="slide-area"></div>
-      <div id="next-slide-area" class="slide-area"></div>
+  <div id="cover" class="slide"><div>
+    <section>
+      <header>
+        <h2>Mozilla Persona</h2>
+      </header>
+      <img src="pictures/imgs/persona-logo-wordmark.png" class="middle" alt="Mozilla Persona Logo">
+      <small class="byline">
+        Clauber Stipkovic, UOL Hosts / Mozilla Reps / Majmun Group, Frontin BH, Belo Horizonte, 03/08/2013
+      </small>
+    <footer class="notes">
+    </footer>
     </section>
-    <link href="css/css.css" type="text/css" rel="stylesheet">
-    <link href="css/styles.css" type="text/css" rel="stylesheet">
-    <script src="js/prettify.txt" type="text/javascript"></script>
+  </div></div>
+
+  <div id="aboutMe" class="slide"><div>
+    <section>
+      <header>
+        <h2>Clauber Stipkovic</h2>
+      </header>
+      <ul>
+        <li>Front-End Developer - UOL HOSTS</li>
+        <li>
+          Voluntário Mozilla (desde 2004) e Mozilla Reps.<br />
+          Tradução, Mozilla Ubiquity, Addons SDK, Firefox OS (Gaia), Mozilla Brasil Corsac ...
+        </li>
+        <li>Estudante de Ciência da Computação na Universidade Mackenzie - FCI </li>
+        <li>Co-founder e CIO - Majmun Group</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="nestedlist" class="slide"><div>
+    <section>
+      <header>
+        <h2>E mais ...</h2>
+      </header>
+      <ul>
+        <li>tentando ser articulado nas apresentações como:</li>
+        <li>Zeno Rocha</li>
+        <li>Bernard De Luna</li>
+        <li>:)</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="taSerto" class="slide cover w"><div>
+    <section>
+        <img src="pictures/imgs/4iyshp.jpg"
+             alt="Ta serto">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="vulnerabilidadeInternet" class="slide"><div>
+    <section>
+      <header>
+        <h2>Alguns dados sobre vulnerabilidade de contas na internet</h2>
+      </header>
+      <ul>
+        <li>75% dos usuários repetem a senha em vários sites</li>
+        <li>Vários casos de exposisão dos dados de usuários (Sony - PSN, por exemplo)</li>
+        <li>Roubo de contas de usuários e fraude custam até US$54 bilhões/ano em perdas.</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="ohWait0" class="slide"><div>
+    <section>
+      <img src="pictures/imgs/Security-Fail_o_93108.jpg" class="middle"
+             alt="segurança">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="ohWait1" class="slide"><div>
+    <section>
+      <img src="pictures/imgs/Maximum-Security_o_93448.jpg" class="middle"
+             alt="segurança">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="taSeguro" class="slide"><div>
+    <section>
+        <br />
+      <blockquote>
+        <p>
+          Suas informações estão realmente seguras onde elas estão hoje?
+        </p>
+      </blockquote>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="ohWait" class="slide"><div>
+    <section>
+        <header>
+            <h2>Oh Wait!</h2>
+        </header>
+      <img src="pictures/imgs/security_wait.gif" class="middle"
+             alt="Ta serto">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="whatIsPersona" class="slide"><div>
+    <section>
+      <blockquote>
+        <p>
+          O Persona é a uma maneira fácil de fazer login em sites sem ter que criar um usuário e senha para cada um deles. Permite que você use somente um e-mail e uma senha para fazer login em qualquer site que o aceite. Este artigo explica como o Persona funciona e como utilizá-lo.
+        </p>
+      </blockquote>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="destaquesPersona" class="slide"><div>
+    <section>
+      <header>
+        <h2>Objetivos do Mozilla Persona</h2>
+      </header>
+      <ul>
+        <li>Substituir as senhas</li>
+        <li>Proteger a sua privacidade</li>
+        <li>Preparado para cross-plataform</li>
+        <li>Eliminar senhas especificas e diminuir os riscos de problemas com segurança</li>
+        <li>Endereços de e-mail já são comumente usados</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="personaEmSiteTerceiros" class="slide"><div>
+    <section>
+      <header>
+        <h2>Persona para novas contas em sites de terceiros</h2>
+      </header>
+      <ul>
+        <li>Coexistir com esquemas de autenticação já existentes (Facebook, Google, Twitter)</li>
+        <li>Implementação simplificada por sites precisando de e-mail e senha para autenticação e identidade</li>
+        <li>Baixo custo de capital/operacional/gerenciamento</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="personaEmSiteTerceiros2" class="slide"><div>
+    <section>
+      <header>
+        <h2>Persona para contas já existentes em sites de terceiros</h2>
+      </header>
+      <ul>
+        <li>Sites que já tem e-mails cadastrados podem eliminar a manutenção de credencial para clientes novos e existentes.</li>
+        <li>Reduz a barreira de inclusão de novos usuários nos sites</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="personaParaUsuarios" class="slide"><div>
+    <section>
+      <header>
+        <h2>Persona para usuários</h2>
+      </header>
+      <ul>
+        <li>Permite que qualquer usuário faça login no site com apenas dois cliques :)</li>
+        <li></li>
+      </ul>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="inlinelist" class="slide"><div>
+    <section>
+      <header>
+        <h2>Cute things (inline list example)</h2>
+      </header>
+      <ul class="inline">
+        <li class="active">Puppies</li>
+        <li>Kittens</li>
+        <li>Hedgehogs</li>
+        <li>Capybara</li>
+        <li>Hippos</li>
+        <li>Koalas</li>
+        <li>Pandas</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="animatedlist" class="slide"><div>
+    <section>
+      <header>
+        <h2>Cute things (step by step list example)</h2>
+      </header>
+      <ul class="inner">
+        <li class="active">Puppies</li>
+        <li>Kittens</li>
+        <li>Hedgehogs</li>
+        <li>Capybara</li>
+        <li>Hippos</li>
+        <li>Koalas</li>
+        <li>Pandas</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="code" class="slide"><div>
+    <section>
+      <header>
+        <h2>Code example</h2>
+      </header>
+      <pre>
+        <code>&lt;html lang="en"&gt;</code>
+        <code><mark>&lt;head&gt;</mark></code>
+        <code>  &lt;title&gt;Shower&lt;/title&gt;</code>
+        <code>  &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+        <code>  &lt;link rel="stylesheet" href="s/screen.css"&gt;</code>
+        <code>  &lt;script src="j/jquery.js"&gt;&lt;/script&gt;</code>
+        <code class="comment">  &lt;-- ^ only if you really need to --&gt;</code>
+        <code><mark>&lt;/head&gt;</mark></code>
+      </pre>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="thanks" class="slide"><div>
+    <section>
+      <header>
+        <h2>Obrigado</h2>
+      </header>
+        <figure class="frame middle swing">
+        <img src="pictures/imgs/276250_Papel-de-Parede-Meme-Thumbs-Up_1920x1200_1667779.jpg"
+             alt="Joia">
+        </figure>
+      <ul class="oneline demourl">
+        <li>Clauber Stipkovic</li>
+        <li><a href="http://twitter.com/clauberhalic">@clauberhalic</a></li>
+        <li><a href="http://clauber.coffeebreakers.org">
+          clauber.coffeebreakers.org
+        </a></li>
+      </ul>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div class="progress"><div></div></div>
+  <!--
+    ^ don't like a progress bar? just delete this DIV
+  -->
+  <script src="scripts/script.js"></script>
+  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
 </body>
 </html>

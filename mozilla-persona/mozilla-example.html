@@ -1,0 +1,365 @@
+<!DOCTYPE HTML>
+<html lang="en-US" class="fade">
+<!-- 
+  ^ You can control a few things with the <html> element's classes:
+
+  "fade"      - smooth fade between slides
+  "nonumbers" - remove the slide numbering after the progress bar
+-->
+
+<head>
+  <title>{title}</title>
+  <!-- 
+    ^ Don't forget a good title - they show up as bookmarks and in Google 
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1274, user-scalable=no">
+  <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+  <style type="text/css">
+    /* Add your own styles here */
+  </style>
+</head>
+<body class="list">
+
+  <header class="caption">
+    <h1>{title}</h1>
+    <p class="footer">{name}, <a href="http://twitter.com/">{twitter}</a> or <a href="mailto:">you@mail.com</a></p>
+  </header>
+
+<!-- 
+  The following is a slide, it needs a class of "slide" and it doesn't 
+  hurt to keep the right semantic elements in there, too.
+  IMPORTANT: each slide needs its own unique ID - this will become its
+  URL and this is how this slide system works!
+-->
+
+  <div id="cover" class="slide"><div>
+    <section>
+      <header>
+        <h2>{title}</h2>
+      </header>
+      <small class="byline">
+        {Name}, Mozilla, {event}, {location}, {date}
+      </small>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="simplelist" class="slide"><div>
+    <section>
+      <header>
+        <h2>Cute things (simple list example)</h2>
+      </header>
+      <ul>
+        <li>Puppies</li>
+        <li>Kittens</li>
+        <li>Hedgehogs</li>
+      </ul> 
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="nestedlist" class="slide"><div>
+    <section>
+      <header>
+        <h2>Cute things (nested List example)</h2>
+      </header>
+      <ul>
+        <li>Puppies
+          <ul>
+            <li>Corgies</li>
+            <li>Labradors</li>
+            <li>Golden Retrievers</li>
+            <li>Alsatians</li>
+          </ul>  
+        </li>
+        <li>Kittens</li>
+        <li>Hedgehogs</li>
+      </ul> 
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="longlist" class="slide"><div>
+    <section>
+      <header>
+        <h2>Cute things (long list example)</h2>
+      </header>
+      <ul class="longlist">
+        <li>Puppies
+          <ul>
+            <li>Corgies</li>
+            <li>Labradors</li>
+            <li>Golden Retrievers</li>
+            <li>Alsatians</li>
+          </ul>  
+        </li>
+        <li>Kittens</li>
+        <li>Hedgehogs</li>
+        <li>Capybara</li>
+        <li>Hippos</li>
+        <li>Koalas</li>
+        <li>Pandas</li>
+      </ul> 
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="inlinelist" class="slide"><div>
+    <section>
+      <header>
+        <h2>Cute things (inline list example)</h2>
+      </header>
+      <ul class="inline">
+        <li class="active">Puppies</li>
+        <li>Kittens</li>
+        <li>Hedgehogs</li>
+        <li>Capybara</li>
+        <li>Hippos</li>
+        <li>Koalas</li>
+        <li>Pandas</li>
+      </ul> 
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+
+  <div id="animatedlist" class="slide"><div>
+    <section>
+      <header>
+        <h2>Cute things (step by step list example)</h2>
+      </header>
+      <ul class="inner">
+        <li class="active">Puppies</li>
+        <li>Kittens</li>
+        <li>Hedgehogs</li>
+        <li>Capybara</li>
+        <li>Hippos</li>
+        <li>Koalas</li>
+        <li>Pandas</li>
+      </ul> 
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="shout" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>Enough with the cute!</h2>
+      </header>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="quote" class="slide"><div>
+    <section>
+      <header>
+        <h2>Quote example</h2>
+      </header>
+      <blockquote>
+        <p>
+          The main problem with quotes on the world wide web is that you 
+          can never be sure that they have been properly attributed.
+        </p>
+        <p class="quotesource">Benjamin Franklin</p>      
+      </blockquote>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="code" class="slide"><div>
+    <section>
+      <header>
+        <h2>Code example</h2>
+      </header>
+      <pre>
+        <code>&lt;html lang="en"&gt;</code>
+        <code><mark>&lt;head&gt;</mark></code>
+        <code>  &lt;title&gt;Shower&lt;/title&gt;</code>
+        <code>  &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+        <code>  &lt;link rel="stylesheet" href="s/screen.css"&gt;</code>
+        <code>  &lt;script src="j/jquery.js"&gt;&lt;/script&gt;</code>
+        <code class="comment">  &lt;-- ^ only if you really need to --&gt;</code>
+        <code><mark>&lt;/head&gt;</mark></code>
+      </pre>
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="centeredimage" class="slide"><div>
+    <section>
+      <header>
+        <h2>Centered image</h2>
+      </header>
+      <img src="pictures/mozillaoverview/redpanda.jpg" class="middle"
+           alt="Red panda (Firefox)">
+      <small class="credits">
+        <a href="http://www.flickr.com/photos/yortw/5798336827/">
+          Photo by Yortw
+        </a>
+      </small>      
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="leftimage" class="slide"><div>
+    <section>
+      <header>
+        <h2>Left image</h2>
+      </header>
+      <img src="pictures/mozillaoverview/redpanda.jpg" class="left"
+           alt="Red panda (Firefox)">
+      <p>Oh, hai, I am not shiny but very cute!</p>
+      <small class="credits">
+        <a href="http://www.flickr.com/photos/yortw/5798336827/">
+          Photo by Yortw
+        </a>
+      </small>      
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+    <div id="rightimage" class="slide"><div>
+    <section>
+      <header>
+        <h2>Right image</h2>
+      </header>
+      <img src="pictures/mozillaoverview/redpanda.jpg" class="right"
+           alt="Red panda (Firefox)">
+      <p>Oh, hai, I am not shiny but very cute!</p>
+      <small class="credits">
+        <a href="http://www.flickr.com/photos/yortw/5798336827/">
+          Photo by Yortw
+        </a>
+      </small>      
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="imageshadow" class="slide"><div>
+    <section>
+      <header>
+        <h2>Image with shadow</h2>
+      </header>
+      <img src="pictures/mozillaoverview/redpanda.jpg" class="shadow right"
+           alt="Red panda (Firefox)">
+      <p>Oh, hai, I am not shiny but very cute!</p>
+      <small class="credits">
+        <a href="http://www.flickr.com/photos/yortw/5798336827/">
+          Photo by Yortw
+        </a>
+      </small>      
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="imageframe" class="slide"><div>
+    <section>
+      <header>
+        <h2>Image with frame</h2>
+      </header>
+      <figure class="shadow right frame">
+        <img src="pictures/mozillaoverview/redpanda.jpg" class="right"
+             alt="Red panda (Firefox)">
+      </figure>
+      <p>Oh, hai, I am not shiny but very cute!</p>
+      <small class="credits">
+        <a href="http://www.flickr.com/photos/yortw/5798336827/">
+          Photo by Yortw
+        </a>
+      </small>      
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="dangling" class="slide"><div>
+    <section>
+      <header>
+        <h2>Image with swinging frame</h2>
+      </header>
+      <figure class="shadow middle frame swing">
+        <img src="pictures/mozillaoverview/redpanda.jpg" 
+             alt="Red panda (Firefox)">
+      </figure>
+      <small class="credits">
+        <a href="http://www.flickr.com/photos/yortw/5798336827/">
+          Photo by Yortw
+        </a>
+      </small>      
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="coverh" class="slide cover h"><div>
+    <section>
+      <header>
+        <h2>Full screen image height-adjusted</h2>
+      </header>
+        <img src="pictures/mozillaoverview/otoro.jpg" 
+             alt="Firefox OS">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="coverw" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>Full screen image width-adjusted</h2>
+      </header>
+        <img src="pictures/mozillaoverview/otoro.jpg" 
+             alt="Firefox OS">
+      <footer class="notes">
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="thanks" class="slide"><div>
+    <section>
+      <header>
+        <h2>Thanks</h2>
+      </header>
+        <figure class="frame middle swing">
+        <img src="pictures/mozillaoverview/redpanda.jpg" 
+             alt="Red panda (Firefox)">
+        </figure>
+      <ul class="oneline demourl">
+        <li>{name}</li>
+        <li><a href="http://twitter.com/">{twitter}</a></li>
+        <li><a href="{slideurl}">
+          {slideurl}
+        </a></li>
+      </ul>
+      <small class="credits">
+        <a href="http://www.flickr.com/photos/yortw/5798336827/">
+          Photo by Yortw
+        </a>
+      </small>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div class="progress"><div></div></div>
+  <!-- 
+    ^ don't like a progress bar? just delete this DIV
+  -->
+  <script src="scripts/script.js"></script>
+  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
